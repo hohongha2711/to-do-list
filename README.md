@@ -1,6 +1,6 @@
 
-Thực hành Redux và UseState 
-Todo List với các thao tác thêm, xoá ,sửa công việc
+# Thực hành Redux và UseState 
+# Todo List với các thao tác thêm, xoá ,sửa công việc
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
