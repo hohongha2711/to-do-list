@@ -1,0 +1,179 @@
+.header {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 40px;
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  
+}
+
+.todo,
+.doing,
+.completed {
+  width: 30%;
+}
+
+.todo-list-item {
+  box-sizing: border-box;
+  //width: 300px;
+  background-color: aqua;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.list-item.item {
+  background-color: cadetblue;
+  border-radius: 8px;
+  margin: 5px 0;
+
+  .btn-delete {
+    background-color: red;
+    height: 25px;
+    align-self: center;
+    margin: 0 2px;
+  }
+
+  .btn-delete:hover {
+    background-color: rgb(133, 11, 11);
+  }
+
+  .btn-update {
+    background-color: rgb(172, 245, 26);
+    height: 25px;
+    align-self: center;
+    margin: 0 2px;
+  }
+
+  .btn-update:hover {
+    background-color: rgb(107, 146, 28);
+  }
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-t-5 {
+  padding-top: 5px;
+}
+
+.add-item {
+  display: flex;
+  width: 100%;
+  //padding: 5px 0;
+  margin-top: 10px;
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    //width: 40%;
+    max-height: 31px;
+
+    span {
+      margin-left: 5px;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .input-add,
+  .input-item {
+    display: flex;
+    background-color: cadetblue;
+    border-radius: 8px;
+    //margin: 5px 0;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    input {
+      outline: none;
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      width: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    }
+  }
+}
+
+.add-item-form {
+  display: flex;
+  justify-content: space-between;
+  min-height: 31px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  //overflow-wrap: break-word;
+  //overflow: hidden;
+}
+
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(58, 58, 240);
+}
+
+.item-title {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+
+  resize: none;
+  overflow: hidden;
+  max-height: 100px;
+  overflow-wrap: break-word;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  pointer-events: auto;
+}
+
+.edit-item{ 
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
